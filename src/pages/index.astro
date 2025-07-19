@@ -1,0 +1,52 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
+---
+
+<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+<ConsentBanner />
+<GoogleAnalytics />
+
+<!-- Font UnifrakturCook -->
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+
+<Header />
+
+<main style="text-align: center;">
+  <h1 style="font-family: 'UnifrakturCook', cursive;">
+    Questo è il posto che cercavi
+  </h1>
+
+  <img src="/assets/esoteric.png" alt="Un posto esoterico" width="1024" height="576" />
+
+  <p class="intro-text">Seguendo il mio percorso capirai tante cose</p>
+
+  <p class="intro-text">
+    clicca <a href="/blog" class="blog-link">QUI</a> e vedrai delle storie incredibili
+  </p>
+</main>
+
+<Footer />
+
+<style>
+  .intro-text {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.5em;
+  }
+
+  .blog-link {
+    font-size: 1em;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .blog-link:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff3333, 0 0 20px #ff6666;
+  }
+</style>
