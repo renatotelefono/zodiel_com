@@ -2,6 +2,7 @@
 title: 'Aleksei Smirnov'
 description: 'Massone russo, esploratore dell’occulto e studioso della mistica ermetica'
 pubDate: 'Jul 14 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/aleksei_smirnov.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: 'Nostradamus'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
+category: 'personaggi famosi'
 heroImage: '../../assets/nostradamus.jpg'
 ---
 

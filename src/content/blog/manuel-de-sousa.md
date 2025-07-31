@@ -2,6 +2,7 @@
 title: 'Manuel de Sousa'
 description: 'Occultista portogallo'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/manuel-de-sousa.jpg'
 ---
 

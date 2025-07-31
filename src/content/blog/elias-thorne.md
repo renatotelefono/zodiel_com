@@ -2,6 +2,7 @@
 title: 'Elias Thorne'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/elias_thorne.jpg'
 ---
 

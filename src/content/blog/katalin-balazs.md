@@ -2,6 +2,7 @@
 title: 'Katalin Balázs'
 description: 'Occultista ungheria'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/katalin-balazs.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: 'Anders Pedersen'
 description: 'Occultista norvegia'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/anders-pedersen.jpg'
 ---
 

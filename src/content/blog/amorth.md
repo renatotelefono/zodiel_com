@@ -2,6 +2,7 @@
 title: 'Padre Amortht'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/amorth.jpg'
 ---
 

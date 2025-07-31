@@ -2,6 +2,7 @@
 title: 'Vittorio Esposito'
 description: 'Esoterista, autodidatta e cercatore di verità nei vicoli dimenticati della Torino novecentesca'
 pubDate: 'Jul 1 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/vittorio_esposito.jpg'
 ---
 

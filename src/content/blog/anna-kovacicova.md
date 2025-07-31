@@ -2,6 +2,7 @@
 title: 'Anna Kovačičová'
 description: 'Occultista slovacchia'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/anna-kovacicova.jpg'
 ---
 

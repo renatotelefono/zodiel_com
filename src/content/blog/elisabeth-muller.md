@@ -2,6 +2,7 @@
 title: 'Elisabeth Müller'
 description: 'Occultista svizzera'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/elisabeth-muller.jpg'
 ---
 

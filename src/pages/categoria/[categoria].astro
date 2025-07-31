@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import GoogleAnalytics from '../../components/GoogleAnalytics.astro';
+import ConsentBanner from '../../components/ConsentBanner.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const categories = Array.from(
+    new Set(posts.map((p) => p.data.category).filter(Boolean))
+  );
+  return categories.map((cat) => ({
+    params: { categoria: cat }
+  }));
+}
+
+const { params } = Astro;
+const categoria = params.categoria;
+
+const posts = (await getCollection('blog'))
+  .filter((p) => p.data.category === categoria)
+  .sort((a, b) => {
+    const numA = parseInt(a.data.title.split('_')[0], 10);
+    const numB = parseInt(b.data.title.split('_')[0], 10);
+    return numA - numB;
+  });
+
+---
+
+<BaseHead title={`Categoria: ${categoria}`} description={SITE_DESCRIPTION} />
+<ConsentBanner />
+<GoogleAnalytics />
+
+<Header />
+
+<main class="main-content">
+  <h1 class="main-title">Categoria: {categoria}</h1>
+
+  {posts.length === 0 ? (
+    <p>Nessun post trovato in questa categoria.</p>
+  ) : (
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li class="post-item">
+          {post.data.heroImage && (
+            <img src={post.data.heroImage?.src} alt={post.data.title} class="post-image" />
+          )}
+          <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+          <p>{post.data.description}</p>
+          <p><strong>Pubblicato:</strong> {post.data.pubDate.toDateString()}</p>
+          {post.data.updatedDate && (
+            <p><strong>Aggiornato:</strong> {post.data.updatedDate.toDateString()}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+  )}
+</main>
+
+<Footer />
+
+<style>
+  .main-content {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .main-title {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #c0a36e;
+    color: white;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .post-item {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid #c0a36e44;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+
+  .post-item h2 {
+    color: #ddb892;
+  }
+
+  .post-item h2 a {
+    text-decoration: none;
+    color: #ddb892;
+  }
+
+  .post-item h2 a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+  }
+
+  .post-image {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 2px solid #c0a36e44;
+  }
+</style>

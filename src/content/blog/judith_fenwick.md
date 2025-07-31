@@ -2,6 +2,7 @@
 title: 'Judith Fenwick'
 description: 'Occultista e medium spirituale, pioniera del movimento spiritista e studiosa dei misteri massonici femminili'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/judith_fenwick.jpg'
 ---
 

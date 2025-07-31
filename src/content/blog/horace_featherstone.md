@@ -2,6 +2,7 @@
 title: 'Horace Featherstone'
 description: 'Avvocato, simbolista e indagatore dei misteri pitagorici'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/horace_featherstone.jpg'
 ---
 

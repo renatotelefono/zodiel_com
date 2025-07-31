@@ -2,6 +2,7 @@
 title: 'Ingrid Olsen'
 description: 'Occultista norvegia'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/ingrid-olsen.jpg'
 ---
 

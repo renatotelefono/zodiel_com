@@ -2,6 +2,7 @@
 title: 'Theodore Ashcombe'
 description: 'Storico massone, antiquario e custode dei misteri esoterici dell’Inghilterra vittoriana'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/theodore_ashcombe.jpg'
 ---
 

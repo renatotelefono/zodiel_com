@@ -2,6 +2,7 @@
 title: 'Néstor Argyros'
 description: 'Filosofo greco, iniziato e custode di misteri eleusini e simboli pitagorici'
 pubDate: 'Jul 5 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/nestor_argyros.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: 'Silas Netherby'
 description: 'Medico delle ombre, studioso dell’anima e ricercatore dell’intersezione tra magnetismo animale e massoneria'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/silas_netherby.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: 'João Menezes'
 description: 'Esoterista portoghese, iniziato alla Massoneria e interprete dei misteri di Fatima'
 pubDate: 'Jul 3 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/joao_menezes.jpg'
 ---
 

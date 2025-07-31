@@ -2,6 +2,7 @@
 title: 'Hedwig Müller'
 description: 'Occultista germania'
 pubDate: 'Jul 20 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/hedwig-muller.jpg'
 ---
 

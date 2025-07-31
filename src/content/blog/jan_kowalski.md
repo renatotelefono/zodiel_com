@@ -2,6 +2,7 @@
 title: 'Jan Kowalski' 
 description: 'Cabala, linguaggi dimenticati e i silenzi di Varsavia'
 pubDate: 'Jul 15 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/jan_kowalski.jpg' 
 ---
 

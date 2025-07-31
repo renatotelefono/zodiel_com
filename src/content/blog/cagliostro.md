@@ -2,6 +2,7 @@
 title: 'Cagliostro'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
+category: 'personaggi famosi'
 heroImage: '../../assets/cagliostro.jpg'
 ---
 

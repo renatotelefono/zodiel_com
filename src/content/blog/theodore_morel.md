@@ -2,6 +2,7 @@
 title: 'Théodore Morel' 
 description: 'Iniziato alla Massoneria francese e studioso delle scienze occulte tra i salotti esoterici della Belle Époque'
 pubDate: 'Jul 10 2025'
+category: 'personaggi famosi'
 heroImage: '../../assets/théodore_morel.jpg' 
 ---
 

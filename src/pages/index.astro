@@ -1,32 +1,51 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import ConsentBanner from '../components/ConsentBanner.astro';
+
+// Ottieni tutti i post
+const posts = await getCollection('blog');
+
+// Estrai tutte le categorie uniche
+const categories = Array.from(
+  new Set(posts.map(post => post.data.category).filter(Boolean))
+);
 ---
 
 <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <ConsentBanner />
 <GoogleAnalytics />
 
-<!-- Font UnifrakturCook -->
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+<!-- Font esoterici -->
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel&display=swap" rel="stylesheet" />
 
 <Header />
 
-<main style="text-align: center;">
+<main class="main-content">
   <h1 class="main-title" style="color: white;">
-  ✦ Questo è il posto che cercavi ✦
-</h1>
+    ✦ Questo è il posto che cercavi ✦
+  </h1>
 
- <img src="/assets/esoteric.png" alt="Un posto esoterico" width="600" style="border: none;" />
-  <p class="intro-text">Seguendo il mio percorso capirai tante cose</p>
+  <img src="/assets/esoteric.png" alt="Un posto esoterico" width="600" class="main-image" />
 
-  <p class="intro-text">
-    clicca <a href="/blog" class="blog-link">QUI</a> e vedrai delle storie incredibili
-  </p>
+  <section class="categories">
+   <h2 style="color: rgb(234, 19, 19);">Categorie</h2>
+    <ul class="category-list">
+      {categories.map((category) => (
+        <li><a href={`/categoria/${category}`} class="category-link">{category}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <p class="intro-text">qui troverai molte informazioni</p>
+
+ 
+
+  
 </main>
 
 <Footer />
@@ -61,6 +80,34 @@ import ConsentBanner from '../components/ConsentBanner.astro';
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(192, 163, 110, 0.5);
     margin: 2rem 0;
+  }
+
+  .categories {
+    margin: 3rem 0;
+  }
+
+  .category-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .category-link {
+    background-color: #1b263b;
+    color: #ffc773;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .category-link:hover {
+    background-color: #ffc773;
+    color: #1b263b;
+    box-shadow: 0 0 10px #ffc773;
   }
 
   .intro-text {
